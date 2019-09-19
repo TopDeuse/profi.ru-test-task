@@ -26,7 +26,7 @@ Link contractor(Node.js)
 Получение всех ссылок
 Example: http://localhost:5000/api/getAll
 Возвращает json: 
-
+```json
 [
     {
         "_id": "5d839731c34d7d3a70f33a10",
@@ -58,22 +58,25 @@ Example: http://localhost:5000/api/getAll
     }
 ]
 
+```
+
 ### POST /api/saveUrl
 Создание сокращенной ссылки
 Example: http://localhost:5000/api/saveUrl
 req.body: 
-
+```json
 {
 	"long_url": "https://yandex.com"
 }
+```
 
 Возвращает json:
-
+```json
 {
         success: true,
         result: shortUrl});
 }
-
+```
 ### GET /api/:id
 Переход по сокращенной ссылке
 Example: http://localhost:5000/api/🧛‍♀️⚕️😅🇲🇺🚫, где 🧛‍♀️⚕️😅🇲🇺🚫 - сокращенная ссылка.
@@ -83,7 +86,7 @@ Example: http://localhost:5000/api/🧛‍♀️⚕️😅🇲🇺🚫, где �
 Получение статистики по конкретной ссылке
 Example: http://localhost:5000/api/statistics/5d839731c34d7d3a70f33a10
 Возвращает json:
-
+```json
 {
     "item": {
         "_id": "5d839731c34d7d3a70f33a10",
@@ -93,7 +96,7 @@ Example: http://localhost:5000/api/statistics/5d839731c34d7d3a70f33a10
         "createdAt": "2019-09-19T14:56:49.686Z"
     }
 }
-
+```
 
 ## How to run
 
