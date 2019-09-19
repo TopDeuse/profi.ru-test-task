@@ -73,8 +73,8 @@ req.body:
 Возвращает json:
 ```json
 {
-        success: true,
-        result: shortUrl});
+        "success": true,
+        "result": "shortUrl"
 }
 ```
 ### GET /api/:id
